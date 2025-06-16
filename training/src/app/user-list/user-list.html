@@ -5,6 +5,9 @@
       <th scope="col">First</th>
       <th scope="col">Last</th>
       <th scope="col">Password</th>
+      @if(newSharedData.mobileNumber) {
+        <th scope="col">Mobile</th>
+      }
       <th scope="col">Is Checked</th>
     </tr>
   </thead>
@@ -14,6 +17,9 @@
       <td>{{newSharedData.firstName}}</td>
       <td>{{newSharedData.lastName}}</td>
       <td>{{newSharedData.password}}</td>
+      @if(newSharedData.mobileNumber) {
+        <td>{{newSharedData.mobileNumber}}</td>
+      }
       <td>{{newSharedData.isChecked}}</td>
     </tr>
   </tbody>
